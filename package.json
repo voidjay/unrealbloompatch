@@ -1,25 +1,30 @@
 {
-  "name": "@voidjay/unrealbloom",
-  "version": "0.1.1",
-  "description": "",
-  "module": "./dist/index.esm.js",
-  "types": "./dist/index.d.ts",
+  "name": "unrealbloompatch",
+  "version": "0.1.2",
+  "description": "three.js unrealbloom patch,resolved background images has unrealbloom effect.",
+  "main": "./build/three.js",
+  "module": "./build/index.module.js",
+  "types": "./build/index.d.ts",
+  "private": false,
   "files": [
-    "dist"
+    "build",
+    "LICENSE",
+    "package.json",
+    "README.md"
   ],
   "scripts": {
     "dev": "rollup -w -c",
     "build": "rollup -c",
     "prepublish": "yarn version && yarn build"
   },
-  "keywords": [],
+  "keywords": ["threejs","unrealbloom"],
   "author": "voidjay",
   "license": "MIT",
   "dependencies": {
-    "@types/three": "^0.141.0",
     "three": "^0.141.0"
   },
   "devDependencies": {
+    "@types/three": "^0.141.0",
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
     "@rollup/plugin-babel": "^5.3.1",
